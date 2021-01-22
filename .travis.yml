@@ -13,7 +13,7 @@ install:
 
 branches:
   only:
-    - master # build master branch only
+    - main # build master branch only
     
 script:
   - hexo generate # generate static files
