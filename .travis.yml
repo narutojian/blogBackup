@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - lts* # use nodejs latest version
+  - lts/* # use nodejs latest version
 cache: npm
 
 before_install:
@@ -25,7 +25,7 @@ after_script:
   - git config user.email "1213566969@qq.com"
   - git add .
   - git commit -m "Travis CI Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-  - git push --force --quiet "https://${blog-token}@https://github.com/narutojian/narutojian.github.io" source:master
+  - git push --force --quiet "https://${blog-token}@https://github.com/narutojian/narutojian.github.io" master:master
   
   
 #deploy:
