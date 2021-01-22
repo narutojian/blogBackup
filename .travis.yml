@@ -1,0 +1,38 @@
+sudo: false
+language: node_js
+node_js:
+  - lts* # use nodejs latest version
+cache: npm
+
+before_install:
+  - export TZ='Asia/Shanghai'
+  
+install:
+  - npm install hexo-cli -g
+  - npm install
+
+branches:
+  only:
+    - master # build master branch only
+    
+script:
+  - hexo generate # generate static files
+  
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "narutojian"
+  - git config user.email "1213566969@qq.com"
+  - git add .
+  - git commit -m "Travis CI Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+  - git push --force --quiet "https://${blog-token}@https://github.com/narutojian/narutojian.github.io" source:master
+  
+  
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  github-token: $blog-token
+#  keep-history: true
+#  on:
+#    branch: master
+#  local-dir: public
