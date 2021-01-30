@@ -107,7 +107,7 @@ symbols_count_time:
   total_symbols: true
   #total_time: true
   awl: 3
-  wpm: 100
+  wpm: 75
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
