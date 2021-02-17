@@ -2,6 +2,7 @@
 title: 英语词典工具Eudic和GoldenDict
 date: 2020-04-20 13:51:43
 description: 介绍好用的英语词典工具，Eudic以及GoldenDict。
+mathjax: false
 tags: [英语词典工具,Eudic,GoldenDict]
 categories:
 - 工具
