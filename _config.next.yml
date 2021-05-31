@@ -471,7 +471,7 @@ google_site_verification: <meta name="google-site-verification" content="flKSt7L
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmasters
-bing_site_verification:
+bing_site_verification: <meta name="msvalidate.01" content="551E330FEDD04710DC9B83BE6974A021" />
 
 # Yandex Webmaster tools verification.
 # See: https://webmaster.yandex.ru
